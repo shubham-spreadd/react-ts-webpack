@@ -1,5 +1,6 @@
 {
     "name": "webpack-typescript-react",
+    "type": "module",
     "version": "0.0.0",
     "description": "webpack-typescript-react frontend boiler plate with react typescript & webpack",
     "keywords": [
@@ -17,9 +18,9 @@
     "author": "Shubham Mehra <shubham.mehra@spreadd.io>",
     "main": "webpack.config.babel.js",
     "scripts": {
-        "build": "cross-env NODE_ENV=production webpack --config webpack.config.babel.js",
+        "build": "cross-env NODE_ENV=productixon webpack --config webpack.config.babel.js",
         "profile": "cross-env NODE_ENV=production webpack --profile --json --config webpack.config.babel.js > ./dist/profile.json && webpack-bundle-analyzer ./dist/profile.json",
-        "start": "cross-env WEBPACK_IS_DEV_SERVER=true NODE_ENV=development webpack serve --config webpack.config.babel.js",
+        "start": "cross-env WEBPACK_IS_DEV_SERVER=true NODE_ENV=development webpack --config webpack.config.babel.js serve",
         "release": "npm version patch",
         "update-hooks": "npx simple-git-hooks",
         "prerelease": "npm run update-hooks",
